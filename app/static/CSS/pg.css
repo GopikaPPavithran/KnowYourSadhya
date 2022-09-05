@@ -124,7 +124,7 @@ body, html {
         text-align: center;
         text-decoration: none;
         display:inline-block; 
-        display: none;/*remove this if buttons not working*/
+        /* display: none;remove this if buttons not working */
         font-size: 16px;
         margin: 4px 2px;
         width: 10px;

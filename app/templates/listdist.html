@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add items</title>
+</head>
+
+<body>
+
+    {% block body %}
+        
+    <form action="{{request.path}}" method="post">
+        <select name="city">
+            {% for d in dist %}
+            <option value="{{d}}">Dist : {{d}}</option>"
+            {% endfor %}
+        </select>
+        <button type="submit" class="btn btn-default">Go</button>
+        {% for item in items %}
+        <div class="big-checkbox" style="height:30px">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="sel_items"
+                value="{{item.id}}">
+            <label class="form-check-label" for="inlineCheckbox1">...{{item.item}}</label>
+        </div>
+
+        {% endfor %}
+    </form>
+    {% endblock %}
+
+    <table border=1>
+        {% for i in items%}
+        <tr>
+            <th> {{ i.item }} </th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
