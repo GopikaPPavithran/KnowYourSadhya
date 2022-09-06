@@ -80,7 +80,7 @@ def getdname(name):
     elif name=="Ekm":
         return "Ernakulam"
     elif name=="Tsr":
-        return "Trissur"
+        return "Thrissur"
     elif name=="Pkd":
         return "Palakkad"
     elif name=="Mlp":
@@ -102,6 +102,7 @@ def list():
     dstn=""
     if request.method=='POST':
         dst=request.form.get('dis')
+        # print("dst"+dst)
         itmid=districts.query.filter_by(dname=dst)
         # items=[]
         dstn=getdname(dst)
