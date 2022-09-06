@@ -99,14 +99,15 @@ def getdname(name):
 def list():
     items=[]
     dst=""
+    dstn=""
     if request.method=='POST':
         dst=request.form.get('dis')
-        dst=getdname(dst)
         itmid=districts.query.filter_by(dname=dst)
         # items=[]
+        dstn=getdname(dst)
         for i in itmid:
             iid=item.query.filter_by(id=i.itemid).first()
             print(iid)
             items.append(iid)
-        return render_template('pg2.html',items=items,dst=dst)
-    return render_template('pg2.html',items=items,dst=dst)
+        return render_template('pg2.html',items=items,dst=dstn)
+    return render_template('pg2.html',items=items,dst=dstn)
