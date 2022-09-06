@@ -61,6 +61,11 @@ body, html {
 
   }
 
+  .leaf{
+    width:500px;
+    height:500px;
+  }
+
  
     .intro{
         height:100%
@@ -70,7 +75,7 @@ body, html {
         display : flex;
         /* justify-content : center; */
         /* align-items : center; */
-        background-color:#f8e3af;
+        /* background-color:#f8e3af; */
         height : 100%;
         color : #FFF;
         
@@ -116,20 +121,41 @@ body, html {
       }
 
       .button-clr{
-        background-color:#e76f51;;
+        /* background-color:#e76f51;; */
         color:#e76f51;
         border-radius: 80%;
         border: none;
         padding: 20px;
         text-align: center;
         text-decoration: none;
-        display:inline-block; 
+        display:block; 
         /* display: none;remove this if buttons not working */
         font-size: 16px;
         margin: 4px 2px;
         width: 10px;
         height: 25px;
-        opacity:0.1;
+        outline:none; 
+        box-shadow: none !important;
+        opacity:0;
+        /* padding: 12px 28px; opacity 0.2*/
+      }
+
+      .maveli{
+        background-color:#e76f51;
+        border-radius: 100%;
+        border: none;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display:block; 
+        font-size: 16px;
+        margin: 4px 2px;
+        width: 5px;
+        height: 5px;
+        outline:none; 
+        box-shadow: none !important;
+        opacity:1;
+        
         /* padding: 12px 28px; opacity 0.2*/
       }
 
@@ -171,10 +197,12 @@ body, html {
         justify-content: space-around;
         overflow-y:scroll;
         height: 500px;
+        border-radius: 25px;
       }
       
       .card {
         margin: 40px;
+        border-radius: 25px;
         position: relative;
         width: 250px;
         height: 200px;
@@ -202,11 +230,12 @@ body, html {
         object-fit: cover;
         display: block;
         position: relative;
+        border-radius: 25px;
       }
       
       .card-desc {
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.9rem;
         position: absolute;
         height: 0;
         top: 0;
@@ -215,6 +244,7 @@ body, html {
         background-color: #2a9d8f;
         overflow-y: scroll;
         transition: 0.8s ease;
+        border-radius: 25px;
       }
       
       .card:hover .card-desc {

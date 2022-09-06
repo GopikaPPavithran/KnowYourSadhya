@@ -36,7 +36,7 @@
       <nav class="navbar navbar-expand-sm navbar-dark  nav-style">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link py-0 text-light" href="#">Mavelikku Vishakunnu</a>
+            <a class="nav-link py-0 text-light" href="#"> Know Your Sadhya</a>
           </li>
         </ul>
       </nav>
@@ -53,32 +53,54 @@
           <p>
           <div class="img-div">
             <img src="/static/k1.png" width="360" height="500" class="img-style">
+            <div class="grup">
             <form class="align-self-baseline" method="post">
-            <button class="bttn button-clr" style="position:absolute; left:15%; top:8%" name="dis" value="Ksd" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:22%; top:17%" name="dis" value="Knr" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:37%; top:30%" name="dis" value="Kzd" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:50%; top:35%" name="dis" value="Mlp" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:65%; top:45%" name="dis" value="Pkd" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:50%; top:50%" name="dis" value="Tsr" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:60%; top:60%" name="dis" value="Ekm" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:75%; top:65%" name="dis" value="Idk" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:65%; top:69%" name="dis" value="Ktm" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:75%; top:77%" name="dis" value="Ptn" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:75%; top:84%" name="dis" value="Klm" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:76%; top:92%" name="dis" value="Tvm" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:53%; top:74%" name="dis" value="Alp" type="submit"></button>
-            <button class="bttn button-clr" style="position:absolute; left:46%; top:25%" name="dis" value="Wnd" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:15%; top:8%; outline: none"  name="dis" value="Ksd" title="Kazargode" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:22%; top:17%;outline: none" name="dis" value="Knr" title="Kannur" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:37%; top:30%;outline: none" name="dis" value="Kzd" title="Kozhikode" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:50%; top:35%;outline: none" name="dis" value="Mlp" title="Malappuram" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:65%; top:45%;outline: none" name="dis" value="Pkd" title="Palakkad" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:50%; top:50%;outline: none" name="dis" value="Tsr" title="Thrissur" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:60%; top:60%;outline: none" name="dis" value="Ekm" title="Ernakulam" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:75%; top:65%;outline: none" name="dis" value="Idk" title="Idukki" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:65%; top:69%;outline: none" name="dis" value="Ktm" title="Kottayam" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:75%; top:77%;outline: none" name="dis" value="Ptn" title="Pathanamthitta" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:75%; top:84%;outline: none" name="dis" value="Klm" title="Kollam" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:76%; top:92%;outline: none" name="dis" value="Tvm" title="Thiruvananthapuram" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:53%; top:74%;outline: none" name="dis" value="Alp" title="Alappuzha" type="submit"></button>
+            <button class="bttn button-clr" onclick="showImage();" style="position:absolute; left:46%; top:25%;outline: none" name="dis" value="Wnd" title="Wayanad" type="submit"></button>
+            <button class="bttn maveli" style = "position:absolute; left:-30%; top:50%;outline: none"><img id="theImage" src="dm2.png" height="300px" width="300px"></button>
             </form>
+
+            </div> <!--new div grup-->
+
+            <script type="text/javascript">
+              function showImage(){
+                          // document.getElementById("ico").style.top=2.72 + "px";  
+                          document.getElementById('leaff').style.visibility="hidden";//dont change this 
+                          // document.getElementById('ico').style.visibility="visible";
+                      }
+
+            </script>
+
+
           </div>
           </p>
 
 
         </div>
 
+
         <!----RIGHT SIDE -->
         <div class="col-lg-7 col-sm-12 right scroll">
 
           <div class="container-fluid">
+
+
+            <!---background image div descp-->
+            <div id="leaff">
+              <img id="ico" src="descp3.png" style="position:absolute; right:15%; top:5%" class="leaf"/>
+            </div>
 
             <div class="row">
               <div class="col">
